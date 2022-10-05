@@ -1,0 +1,44 @@
+.sw{
+
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 32px;
+    padding: 8px 32px;
+  }
+  
+  label {
+    position:relative;
+    width: 40px;
+    height: 20px;
+    background-color: #b0b0b0;
+    border-radius:50px;
+  
+   
+  
+  }
+  
+  label input {
+    appearance:none;
+    -webkit-appearance : none ;
+  }
+  
+  label span{
+    position:absolute;
+    width: 16px;
+    height: 16px;
+    border-radius:16px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    transition: left .4s;
+    cursor:pointer;
+    border: 2px solid #b0b0b0;
+    
+  }
+  
+  label input:checked ~span{
+    
+    left:20px;
+    
+  }

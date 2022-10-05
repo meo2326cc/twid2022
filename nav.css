@@ -1,0 +1,85 @@
+
+
+nav .container {
+  box-sizing: border-box;
+  padding: 0px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+  position: fixed;
+  width: 100%;
+  background-color: #F0F0F0;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  z-index: 99;
+
+}
+nav .container .logo {
+  display: flex;
+  align-items: center;
+}
+nav .container .logo img {
+  width: 80px;
+}
+nav .container h2 {
+  font-size: 14px;
+}
+nav .container div {
+  display: flex;
+}
+nav .container div ul {
+  display: flex;
+}
+nav .container div ul li {
+  padding: 8px 16px;
+}
+nav .container div ul li a:hover {
+  color: #87C9B6;
+  text-decoration: underline;
+}
+nav .container div .collapse {
+  display: none;
+}
+
+.break{
+  height: 84px;
+  }
+
+@media (max-width: 996px) {
+  nav .container {
+  /**/
+  }
+  nav .container div ul {
+    display: none;
+  }
+  nav .container div .collapse {
+    display: inherit;
+    padding: 8px;
+    margin: 0px 16px;
+    background-color: #fff;
+    border-radius: 32px;
+    cursor: pointer;
+  }
+  nav .container div .collapse:hover {
+    background-color: rgb(220, 220, 220);
+  }
+}
+@media (max-width: 640px) {
+  nav .container{
+    font-size: 0.5em;
+  }
+  nav .container .logo h2 {
+    display: none;
+  }
+  .break{
+    height: 60px;
+    }
+}
+
+@media (max-width:500px) {
+  nav .container {
+    padding: 0px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
