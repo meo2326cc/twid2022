@@ -41,14 +41,13 @@ ul li {
 }
 ul li a:hover {
   color: #87C9B6;
-  text-decoration: underline;
 }
 nav .container div .collapse {
   display: none;
 }
 
 .break{
-  height: 84px;
+  height: 60px;
   }
 
 .mlist{
@@ -75,9 +74,7 @@ nav .container div .collapse {
 }
 
 @media (max-width: 996px) {
-  nav .container {
-  /**/
-  }
+
   nav .container div .list {
     display: none;
   }
@@ -103,13 +100,10 @@ nav .container div .collapse {
   nav .container .logo h2 {
     display: none;
   }
-  .break{
-    height: 60px;
-    }
 }
 
 @media (max-width:500px) {
-  nav .container {
+  nav {
     padding: 0px;
   }
 }
