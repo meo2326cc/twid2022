@@ -69,12 +69,22 @@ h2{
     padding: 0px 64px;
 }}
 
+svg{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
 @media(max-width:640px){
     .h1style{
         text-align: center;
     }
     h1{
         font-size: 1.5em !important; 
+    }
+    svg{
+        width: 50%;
+
     }
 }
 
@@ -99,9 +109,6 @@ h2{
     }
 }
 
-svg{
-    width: 80%;
-}
 
 .end{
     padding: 32px 0px;

@@ -59,6 +59,12 @@ h2 {
   font-size: 4em;
 }
 
+svg {
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+
 @media (max-width: 640px) {
   .h1style {
     text-align: center;
@@ -66,6 +72,10 @@ h2 {
 
   h1 {
     font-size: 1.5em !important;
+  }
+
+  svg {
+    width: 50%;
   }
 }
 .map {
@@ -86,10 +96,6 @@ h2 {
 }
 .warp #com h3 {
   font-size: 1.5em;
-}
-
-svg {
-  width: 80%;
 }
 
 .end {

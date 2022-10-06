@@ -1,17 +1,23 @@
-
+nav{
+      position: fixed;
+      z-index: 99;  
+      width: 100%;  
+      background-color: #F0F0F0;  
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);  
+      font-size: 0.9em;  
+      box-sizing: border-box;
+      padding: 0px 24px 0px 24px;
+}
 
 nav .container {
-  box-sizing: border-box;
-  padding: 0px 24px;
+
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  font-size: 0.9em;
-  position: fixed;
-  width: 100%;
-  background-color: #F0F0F0;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-  z-index: 99;
+
+
+
 
 }
 nav .container .logo {
@@ -27,13 +33,13 @@ nav .container h2 {
 nav .container div {
   display: flex;
 }
-nav .container div ul {
+nav .container div .list {
   display: flex;
 }
-nav .container div ul li {
+ul li {
   padding: 8px 16px;
 }
-nav .container div ul li a:hover {
+ul li a:hover {
   color: #87C9B6;
   text-decoration: underline;
 }
@@ -45,11 +51,34 @@ nav .container div .collapse {
   height: 84px;
   }
 
+.mlist{
+  animation-name: list;
+  animation-duration: 1s;
+  padding-bottom: 12px;
+}
+
+@keyframes list{
+  from{
+    opacity: 0;
+
+  }
+  to{
+    opacity: 1;
+
+  }
+}
+
+@media(min-width:996px) {
+  .mobilelist{
+    display: none;
+  }
+}
+
 @media (max-width: 996px) {
   nav .container {
   /**/
   }
-  nav .container div ul {
+  nav .container div .list {
     display: none;
   }
   nav .container div .collapse {
@@ -63,6 +92,9 @@ nav .container div .collapse {
   nav .container div .collapse:hover {
     background-color: rgb(220, 220, 220);
   }
+
+
+
 }
 @media (max-width: 640px) {
   nav .container{

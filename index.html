@@ -36,7 +36,7 @@
       </label> <span>&nbsp; 大</span>
     </div>
 
-    <ul>
+    <ul class="list">
       <li> <a href="#purpose">聯盟宗旨</a> </li>
       <li> <a href="#candidate">認證候選人</a> </li>
       <li> <a href="#intro">聯盟簡介</a> </li>
@@ -49,7 +49,10 @@
     
 
   </div>
-</div>
+
+</div>  	
+<div class="mobilelist">
+	</div>
 </nav>
 <section id="home"></section>
 <div class="break"></div>
@@ -434,6 +437,23 @@
 
 <script src="tw.js"></script>
 <script src="fz.js"></script>
+<script>
+	let counter = 2;
+	let btn = document.querySelector('.collapse');
+	let tri = document.querySelector('.mobilelist');
+	btn.addEventListener('click',act);
+	function act(){
+	counter +=1;
+
+	if(counter%2 === 1){
+		tri.innerHTML = '<ul class="mlist"><li> <a href="#purpose">聯盟宗旨</a> </li><li> <a href="#candidate">認證候選人</a></li><li> <a href="#intro">聯盟簡介</a> </li></ul>';
+	}
+	else{
+		tri.innerHTML = '';
+	}
+		console.log(counter);
+	}
+</script>
 <script>
 
         //https://codepen.io/codefoxx/pen/eYWbBWw
