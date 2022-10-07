@@ -10,6 +10,7 @@ $bodyColor:#F0F0F0;
     border-radius: 10px;
     animation-name:fadein;
     animation-duration:.5s;
+    cursor: pointer;
 
     h4{
         font-size: 1.3em;
@@ -28,6 +29,12 @@ $bodyColor:#F0F0F0;
         border-radius:40px;
         margin-right:16px;
         background-position: center;
+    }
+    &:hover{
+        background-color:lighten($bodyColor,3%);
+    }
+    &:active{
+        background-color:darken($bodyColor,15%);
     }
 }
 
