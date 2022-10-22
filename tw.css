@@ -24,6 +24,8 @@
   border-radius: 40px;
   margin-right: 16px;
   background-position: center;
+  animation-name: fadein;
+  animation-duration: 1s;
 }
 .twstyle:hover {
   background-color: #f8f8f8;
