@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="tw.css">
   
   <!-- Google tag (gtag.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5MS81W109F"></script>
   <script>
   window.dataLayer = window.dataLayer || [];
@@ -62,6 +63,7 @@
     </div>
 
     <ul class="list">
+		<li><a href="#news">最新消息</a></li>
       <li> <a href="#purpose">聯盟宗旨</a> </li>
       <li> <a href="#candidate">認證候選人</a> </li>
       <li> <a href="#intro">聯盟簡介</a> </li>
@@ -91,13 +93,21 @@
     </div>
   </div>
 
+  <!--news-->
+  <section id="news"></section>
+  	<div class="break"></div>
+	<div>
+		<h2 id="section01"><span class="baselinedec">最新消息</span></h2>
+		<div class="twidnews txt">
 
+		</div>
+	</div>
   <!--purpose-->
   <section id="purpose">
 	<div class="break"></div>
   <div class="block position-stamp">
 
-    <h2 id=“section01”><span class="baselinedec">聯盟宗旨</span></h2>
+    <h2 id=“section02”><span class="baselinedec">聯盟宗旨</span></h2>
     <p class="txt">敬愛的台灣鄉親：
       
       台海局勢緊張，中國宣稱台灣海峽是他們的內海，以內戰為名，待機侵略台灣。
@@ -123,7 +133,7 @@
   <section id="candidate">
 <div class="break"></div>
   
-    <h2 id=“section02”><span class="baselinedec">認證候選人</span></h2><div class="map txt">
+    <h2 id=“section03”><span class="baselinedec">認證候選人</span></h2><div class="map txt">
     <div class="warp">
     <div class="mapspace">
   <?xml version="1.0" encoding="utf-8"?>
@@ -434,7 +444,7 @@
  <section id="intro">
 <div class="break"></div>
  <div class="block intro">
-  <h2 id=“section03”><span class="baselinedec">聯盟簡介</span></h2>
+  <h2 id=“section04”><span class="baselinedec">聯盟簡介</span></h2>
   <p class="txt">
     各位台灣國的主人大家好：<br>
     在這邊正式跟大家宣布，由一群海內外台灣人所支持的「2022台灣建國制憲正名選舉聯盟」在即日起成立，
@@ -452,8 +462,13 @@
 </div>
 
 </section>
-
 <div class="break"></div>
+
+<!--board-->
+<div class="outerboard hide">
+	<div class="board"></div>
+	<div class="closebtn">關閉</div>
+</div>
 
 </div>
 <!--container end-->
@@ -473,7 +488,7 @@
 	counter +=1;
 
 	if(counter%2 === 1){
-		tri.innerHTML = '<ul class="mlist"><li> <a href="#purpose">聯盟宗旨</a> </li><li> <a href="#candidate">認證候選人</a></li><li> <a href="#intro">聯盟簡介</a> </li></ul>';
+		tri.innerHTML = '<ul class="mlist"><li> <a href="#news">最新消息</a> </li> <li> <a href="#purpose">聯盟宗旨</a> </li><li> <a href="#candidate">認證候選人</a></li><li> <a href="#intro">聯盟簡介</a> </li></ul>';
 	}
 	else{
 		tri.innerHTML = '';
@@ -496,6 +511,7 @@
     
 
 </script>
+<script src="api.js"></script>
 <script type="application/ld+json">
 	{
 		"@context": "https://schema.org",

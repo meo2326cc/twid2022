@@ -31,7 +31,10 @@ h2{
     text-align: center;
     font-size: 2.5em;
     font-weight: 500;
-
+}
+h4{
+    font-size: 1.5em;
+    font-weight: 500;
 }
 
 .baselinedec{
@@ -130,7 +133,21 @@ svg{
 
     }
 }
-
+.twidnews{
+    text-align: center;
+    font-size: 1.2em;
+    .c1{
+        padding:16px 8px;
+        background-color: #fff;
+        box-shadow: 1px 1px 1px rgb(0 0 0 / 25%);
+        border-radius: 24px;
+        margin: 16px 8px;
+        cursor: pointer;
+        &:hover{
+            background-color: $bodyColor;
+        }
+    }
+}
 .map{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 24px;
@@ -159,4 +176,39 @@ svg{
     background-color: $green;
     color: #000;
     text-align: center;
+}
+
+
+.outerboard{
+    .board{
+        max-width: 960px; 
+        margin: auto;
+    }
+.closebtn{
+    text-align: center;
+    margin: auto;
+    width: 48px;
+    padding: 16px;
+    background-color: $space;
+    cursor: pointer;
+    &:hover{
+        background-color: darken($space,20%);
+    }
+}
+    border-radius: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 101;
+    background-color: #fff;
+    position:fixed;
+    height: 77vh;
+    width: 90%;
+    padding: 32px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: auto;
+}
+
+.hide{
+    display: none;
 }
