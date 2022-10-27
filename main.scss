@@ -140,7 +140,7 @@ svg{
         padding:16px 8px;
         background-color: #fff;
         box-shadow: 1px 1px 1px rgb(0 0 0 / 25%);
-        border-radius: 24px;
+        border-radius: 8px;
         margin: 16px 8px;
         cursor: pointer;
         &:hover{
@@ -176,6 +176,7 @@ svg{
     background-color: $green;
     color: #000;
     text-align: center;
+    font-size: 0.9em;
 }
 
 
@@ -190,6 +191,7 @@ svg{
     width: 48px;
     padding: 16px;
     background-color: $space;
+    border-radius:8px;
     cursor: pointer;
     &:hover{
         background-color: darken($space,20%);

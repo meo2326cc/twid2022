@@ -129,7 +129,7 @@ svg {
   padding: 16px 8px;
   background-color: #fff;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 24px;
+  border-radius: 8px;
   margin: 16px 8px;
   cursor: pointer;
 }
@@ -163,6 +163,7 @@ svg {
   background-color: #87c9b6;
   color: #000;
   text-align: center;
+  font-size: 0.9em;
 }
 
 .outerboard {
@@ -189,6 +190,7 @@ svg {
   width: 48px;
   padding: 16px;
   background-color: #D9D9D9;
+  border-radius: 8px;
   cursor: pointer;
 }
 .outerboard .closebtn:hover {
