@@ -1,4 +1,4 @@
-axios.get('https://raw.githubusercontent.com/meo2326cc/data/master/.mockend.json')
+axios.get('https://raw.githubusercontent.com/meo2326cc/twid_post/master/post.json')
 .then(res => {
 let va1 = res.data;
 va1.data.forEach(getContent => {
@@ -41,21 +41,16 @@ for (let j=0;j<newscom.length;j++){
     });
 }
 
-let resetboard = document.querySelector('.closebtn'); //關閉按鈕
-resetboard.addEventListener('click' , function(){
+document.querySelector('.closebtn').addEventListener('click' , closewin);
+//document.querySelector('.closebtntop').addEventListener('click' , closewin);
+
+
+function closewin (){
     boardinner.innerHTML = '';
     outerboard.className = 'board hide';
-});
-
-
+}
 
 })
 .catch( err => {
 console.log(err);
 })
-
-
-
-
-
-//addEventListener('click', function() {console.log('ok')});
